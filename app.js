@@ -96,6 +96,15 @@ else
 
 
 //Chapter 21-25 task# 15
+var password = prompt("Enter Password")
+var numbers = /[0-9]/g;
+var alphabets = /[a-z]/g;
+password = password.toLowerCase();
+
+if (password.length < 6 || password[0] >= 0 && password[0] <= 9 || password.match(numbers) == null || password.match(alphabets) == null) {
+    alert("Invalid Password!");
+    password = prompt("Enter valid Password");
+}
 
 
 //Chapter 21-25 task# 16
